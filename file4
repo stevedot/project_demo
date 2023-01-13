@@ -1,0 +1,6 @@
+e SSH URL usually takes the following form :
+
+SSH URL : git@<repo_url>:<url>/<git_repository>.git
+For example, if your repository was configured on Github, you would use the following command to change your remote.
+
+$ git remote set-url origin git@github.com:user/repository.git
