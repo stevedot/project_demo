@@ -4,3 +4,35 @@ SSH URL : git@<repo_url>:<url>/<git_repository>.git
 For example, if your repository was configured on Github, you would use the following command to change your remote.
 
 $ git remote set-url origin git@github.com:user/repository.git
+pip install --prefer-binary --no-cache-dir \
+        crate[sqlalchemy] || true \
+    pip install --prefer-binary --no-cache-dir \
+        pinotdb || true
+        pinotdb || true \
+    pip install --prefer-binary --no-cache-dir \
+        sqlalchemy-solr || true \
+    pip install --prefer-binary --no-cache-dir \
+        taospy || true \
+    pip install --prefer-binary --no-cache-dir \
+        impyla || true \
+    pip install --prefer-binary --no-cache-dir \
+        pymonetdb sqlalchemy-monetdb || true \
+    pip install --prefer-binary --no-cache-dir \
+        IfxPy sqlalchemy-informix || true \
+    pip install --prefer-binary --no-cache-dir \
+        salesforce-merlion || true \
+    pip install --prefer-binary --no-cache-dir \
+        pydruid || true \
+    pip install --prefer-binary --no-cache-dir \
+        sqlalchemy-hana hdbcli || true \
+    pip install --prefer-binary --no-cache-dir \
+        elasticsearch elasticsearch-dbapi || true \
+    pip install --prefer-binary --no-cache-dir \
+        pymysql || true \
+    pip install --prefer-binary --no-cache-dir \
+        teradatasql teradatasqlalchemy || true \
+    pip install --prefer-binary --no-cache-dir \
+        sqlalchemy-sqlany sqlanydb || true
+
+ARG VERSION=
+RUN pip install --no-cache-dir mindsdb${VERSION:+"==$VERSION"}
