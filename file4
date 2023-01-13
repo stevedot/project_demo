@@ -36,3 +36,13 @@ pip install --prefer-binary --no-cache-dir \
 
 ARG VERSION=
 RUN pip install --no-cache-dir mindsdb${VERSION:+"==$VERSION"}
+f I clone from A to my local and then use "git remote set-url B". will it delete the repository in A? I am trying to clone a repository from AWS code commit to GitLab – 
+Josh
+ Feb 1, 2018 at 3:25
+usually when I'm forking a new repo, I make a mistake and set the origin to the upstream. End up needing to correct it using the 2nd command git remote set-url origin git@github.com:User/UserRepo.git – 
+mfaani
+ Aug 2, 2018 at 21:47 
+2
+-u let you point your current local branch to the remote master branch I don't get why I'd want to do such. I mean let's say I pulled from master, created a new featureBranch...committed my changes and then pushed my changes to origin/featureBranch and then I merged/pull that feature into my master. <— at this moment am I not done with my featureBranch? Why would I need it to point to remote master branch? Shouldn't I checkout to local/master and then pull from latest origin? – 
+mfaani
+ Aug 2, 2018 at 22:01
